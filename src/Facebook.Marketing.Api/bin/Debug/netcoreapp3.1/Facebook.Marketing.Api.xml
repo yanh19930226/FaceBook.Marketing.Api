@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Facebook.Marketing.Api</name>
+    </assembly>
+    <members>
+        <member name="T:Facebook.Marketing.Api.Controllers.AuthController">
+            <summary>
+            登入认证
+            </summary>
+        </member>
+        <member name="M:Facebook.Marketing.Api.Controllers.AuthController.Test">
+            <summary>
+            登入认证测试
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Facebook.Marketing.Api.Controllers.MarketingController">
+            <summary>
+            广告
+            </summary>
+        </member>
+        <member name="M:Facebook.Marketing.Api.Controllers.MarketingController.Test">
+            <summary>
+            广告测试
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

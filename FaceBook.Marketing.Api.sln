@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{69352B89-2A1D-445F-BE0D-8E948552B8B8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{BB6AB227-0583-4EC8-BA92-AE8281DF08B1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Facebook.Marketing.Api", "src\Facebook.Marketing.Api\Facebook.Marketing.Api.csproj", "{A4389494-C458-47C7-A84D-982DB61C4799}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FaceBook.Marketing.SDK", "src\FaceBook.Marketing.SDK\FaceBook.Marketing.SDK.csproj", "{75EAA91C-F82E-434C-A43E-C50874334AAF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FaceBookSDKTests", "tests\FaceBookSDKTests\FaceBookSDKTests.csproj", "{DC872C5C-C392-4BB2-93F8-C5A464B10B95}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Adou.TWUSA.SDK", "..\..\ApiDemo\ApiDemo\Adou.TWUSA.SDK\Adou.TWUSA.SDK.csproj", "{9F92B8C1-2011-4703-9AE0-31D857A710DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A4389494-C458-47C7-A84D-982DB61C4799}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4389494-C458-47C7-A84D-982DB61C4799}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4389494-C458-47C7-A84D-982DB61C4799}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4389494-C458-47C7-A84D-982DB61C4799}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75EAA91C-F82E-434C-A43E-C50874334AAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75EAA91C-F82E-434C-A43E-C50874334AAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75EAA91C-F82E-434C-A43E-C50874334AAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75EAA91C-F82E-434C-A43E-C50874334AAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC872C5C-C392-4BB2-93F8-C5A464B10B95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC872C5C-C392-4BB2-93F8-C5A464B10B95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC872C5C-C392-4BB2-93F8-C5A464B10B95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC872C5C-C392-4BB2-93F8-C5A464B10B95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F92B8C1-2011-4703-9AE0-31D857A710DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F92B8C1-2011-4703-9AE0-31D857A710DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F92B8C1-2011-4703-9AE0-31D857A710DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F92B8C1-2011-4703-9AE0-31D857A710DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A4389494-C458-47C7-A84D-982DB61C4799} = {69352B89-2A1D-445F-BE0D-8E948552B8B8}
+		{75EAA91C-F82E-434C-A43E-C50874334AAF} = {69352B89-2A1D-445F-BE0D-8E948552B8B8}
+		{DC872C5C-C392-4BB2-93F8-C5A464B10B95} = {BB6AB227-0583-4EC8-BA92-AE8281DF08B1}
+		{9F92B8C1-2011-4703-9AE0-31D857A710DD} = {69352B89-2A1D-445F-BE0D-8E948552B8B8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {76C7BDAA-E96C-43AB-92B2-B4CFDA3DF124}
+	EndGlobalSection
+EndGlobal
