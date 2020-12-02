@@ -22,6 +22,8 @@ D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\bin\Debug\netcorea
 D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\bin\Debug\netcoreapp3.1\DotNetCore.CAP.MySql.dll
 D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\bin\Debug\netcoreapp3.1\DotNetCore.CAP.RabbitMQ.dll
 D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\bin\Debug\netcoreapp3.1\Elasticsearch.Net.dll
+D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\bin\Debug\netcoreapp3.1\Flurl.dll
+D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\bin\Debug\netcoreapp3.1\Flurl.Http.dll
 D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\bin\Debug\netcoreapp3.1\MediatR.dll
 D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
 D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
@@ -81,6 +83,8 @@ D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\bin\Debug\netcorea
 D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\bin\Debug\netcoreapp3.1\System.Threading.Channels.dll
 D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\bin\Debug\netcoreapp3.1\zipkin4net.dll
 D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\bin\Debug\netcoreapp3.1\zh\DotNetCore.CAP.Dashboard.resources.dll
+D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\bin\Debug\netcoreapp3.1\FaceBook.Marketing.SDK.dll
+D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\bin\Debug\netcoreapp3.1\FaceBook.Marketing.SDK.pdb
 D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\obj\Debug\netcoreapp3.1\Facebook.Marketing.Api.csprojAssemblyReference.cache
 D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\obj\Debug\netcoreapp3.1\Facebook.Marketing.Api.AssemblyInfoInputs.cache
 D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\obj\Debug\netcoreapp3.1\Facebook.Marketing.Api.AssemblyInfo.cs

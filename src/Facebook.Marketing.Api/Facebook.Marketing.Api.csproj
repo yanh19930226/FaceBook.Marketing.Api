@@ -9,11 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Auth\" />
+    <PackageReference Include="Core" Version="1.0.3" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Core" Version="1.0.3" />
+    <ProjectReference Include="..\FaceBook.Marketing.SDK\FaceBook.Marketing.SDK.csproj" />
   </ItemGroup>
 
 

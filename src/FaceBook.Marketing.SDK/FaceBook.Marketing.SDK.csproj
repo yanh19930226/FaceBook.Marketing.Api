@@ -8,4 +8,8 @@
     <PackageReference Include="Flurl.Http" Version="3.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Models\AdAccounts\" />
+  </ItemGroup>
+
 </Project>
