@@ -4,19 +4,18 @@ using System.Text;
 
 namespace FaceBook.Marketing.SDK.Models.AuthTokens
 {
-    public class UserAuthTokenRequest : BaseRequest<UserAuthTokenResponse, UserAuthTokenRequestParameter>
+    public class UserAuthTokenRequest : BaseRequest<UserAuthTokenResponse, string>
     {
-        public UserAuthTokenRequest(UserAuthTokenRequestParameter data, string token=null) :base(data,token)
+        public UserAuthTokenRequest(string data, string token=null) :base(data,token)
         {
-
         }
-        public override string Url => "oauth/access_token?code="+this.Data.code;
+        public override string Url => "oauth/access_token";
     }
-    public class UserAuthTokenRequestParameter
-    {
-        public string code { get; set; }
+    //public class UserAuthTokenRequestParameter
+    //{
+    //    public string code { get; set; }
         
-    }
+    //}
 
     public class UserAuthTokenResponse
     {

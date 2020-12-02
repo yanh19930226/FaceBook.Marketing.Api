@@ -979,14 +979,14 @@
     "System.Xml.ReaderWriter/4.0.11": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ZIiLPsf67YZ9zgr31vzrFaYQqxRPX9cVHjtPSnmx4eN6lbS/yEyYNr2vs1doGDEscF0tjCZFsk9yUg1sC9e8tg==",
+      "sha512": "sha512-xWF2hTE9iI4UhFGt0uueN8YBhTSmSI4TqDM/FyQ9bQD3hBFKnBgTdZgsqz0BLRCdlkXwUBulsJO+YDcmyPP/Rw==",
       "path": "system.xml.readerwriter/4.0.11",
       "hashPath": "system.xml.readerwriter.4.0.11.nupkg.sha512"
     },
     "System.Xml.XDocument/4.0.11": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Mk2mKmPi0nWaoiYeotq1dgeNK1fqWh61+EK+w4Wu8SWuTYLzpUnschb59bJtGywaPq7SmTuPf44wrXRwbIrukg==",
+      "sha512": "sha512-Yqf6ASqItchbhj7liGPys+uzeRKmHXIHu0+6PWyRATxGa7/gKE7cPIQr5XQ453R9thLxX96OUR4C1QGfO4K5yQ==",
       "path": "system.xml.xdocument/4.0.11",
       "hashPath": "system.xml.xdocument.4.0.11.nupkg.sha512"
     },

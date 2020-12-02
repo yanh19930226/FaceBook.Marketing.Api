@@ -11,13 +11,10 @@ namespace FaceBook.Marketing.SDK.Models
             Token = token;
             this.Data = data;
         }
-        public RequestEnum Request { get; set; } = RequestEnum.Api;
-        public abstract string Url { get; }
-
+        //public RequestEnum Request { get; set; } = RequestEnum.Api;
         public string Token { get; set; }
-
         public K Data { get; set; }
-
+        public abstract string Url { get; }
     }
 
     public class BaseResponse

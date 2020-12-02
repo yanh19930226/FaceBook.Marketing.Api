@@ -44,28 +44,29 @@ namespace FaceBook.Marketing.SDK
 
             FacebookResult<T> result = new FacebookResult<T>();
 
-            if (request.Request == RequestEnum.Refresh)
-            {
+            //if (request.Request == RequestEnum.Refresh)
+            //{
 
-            }
+            //}
 
-            if (request.Request == RequestEnum.User)
-            {
-                url = request.Url + "?client_id=" + _clientId + "&client_secret=" + _clientSecret + "&redirect_uri=" + _redirectUri+"&code="+request.Data;
+            //if (request.Request == RequestEnum.User)
+            //{
 
-            }
+            //    url = request.Url + "?client_id=" + _clientId + "&redirect_uri=" + _redirectUri+"&client_secret=" + _clientSecret +"&code="+request.Code;
 
-            if (request.Request == RequestEnum.App)
-            {
+            //}
 
-                url = request.Url+ "?client_id="+_client+ "&client_secret="+ _clientSecret+ "&grant_type=client_credentials&redirect_uri="+ _redirectUri;
+            //if (request.Request == RequestEnum.App)
+            //{
 
-            }
+            //    url = request.Url+ "?client_id="+ _clientId + "&client_secret="+ _clientSecret+ "&grant_type=client_credentials&redirect_uri="+ _redirectUri;
 
-            if (request.Request == RequestEnum.Api)
-            {
+            //}
 
-            }
+            //if (request.Request == RequestEnum.Api)
+            //{
+
+            //}
 
             var httpResponse = await _client.GetAsync(url);
 

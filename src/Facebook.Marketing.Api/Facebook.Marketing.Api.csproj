@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\Facebook.Marketing.Api.xml</DocumentationFile>
+    <DocumentationFile>E:\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\Facebook.Marketing.Api.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
