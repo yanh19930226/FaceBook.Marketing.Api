@@ -12,11 +12,8 @@ namespace FaceBook.Marketing.SDK.Models
             this.Data = data;
         }
         public abstract string Url { get; }
-
         public string Token { get; set; }
-
         public K Data { get; set; }
-
     }
 
     public class BaseResponse

@@ -28,7 +28,6 @@ namespace Facebook.Marketing.Api.Controllers
         public AuthController( IOptions<Appsettings> options)
         {
             _settings = options.Value;
-
         }
         /// <summary>
         /// 获取应用AccessToken
