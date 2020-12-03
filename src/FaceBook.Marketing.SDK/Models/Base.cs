@@ -11,7 +11,6 @@ namespace FaceBook.Marketing.SDK.Models
             Token = token;
             this.Data = data;
         }
-        public RequestEnum Request { get; set; } = RequestEnum.Api;
         public abstract string Url { get; }
 
         public string Token { get; set; }

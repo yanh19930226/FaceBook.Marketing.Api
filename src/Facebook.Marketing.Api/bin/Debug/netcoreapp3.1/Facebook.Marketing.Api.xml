@@ -24,6 +24,28 @@
             <param name="code"></param>
             <returns></returns>
         </member>
+        <member name="T:Facebook.Marketing.Api.Controllers.AdAccountsController">
+            <summary>
+            广告账户管理
+            </summary>
+        </member>
+        <member name="M:Facebook.Marketing.Api.Controllers.AdAccountsController.Test">
+            <summary>
+            广告账户测试
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Facebook.Marketing.Api.Controllers.AdsController">
+            <summary>
+            广告管理
+            </summary>
+        </member>
+        <member name="M:Facebook.Marketing.Api.Controllers.AdsController.Index">
+            <summary>
+            广告测试
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:Facebook.Marketing.Api.Controllers.AuthController">
             <summary>
             权限认证管理
@@ -43,27 +65,17 @@
         </member>
         <member name="M:Facebook.Marketing.Api.Controllers.AuthController.GetTokenUserAsync(System.String)">
             <summary>
-            获取用户Token
+            根据授权码获取用户Token
             </summary>
-            <param name="code"></param>
+            <param name="code">授权码</param>
             <returns></returns>
         </member>
-        <member name="M:Facebook.Marketing.Api.Controllers.AuthController.GetCheckAuthTokenAsync(System.String)">
+        <member name="M:Facebook.Marketing.Api.Controllers.AuthController.GetCheckAuthTokenAsync(System.String,System.String)">
             <summary>
             检查Token
             </summary>
-            <param name="code"></param>
-            <returns></returns>
-        </member>
-        <member name="T:Facebook.Marketing.Api.Controllers.MarketingController">
-            <summary>
-            广告
-            </summary>
-        </member>
-        <member name="M:Facebook.Marketing.Api.Controllers.MarketingController.Test">
-            <summary>
-            广告测试
-            </summary>
+            <param name="needToCheckToken">要检查的Token</param>
+            <param name="appToken">应用Token</param>
             <returns></returns>
         </member>
     </members>

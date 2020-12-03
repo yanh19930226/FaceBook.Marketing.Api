@@ -41,7 +41,7 @@ namespace Facebook.Marketing.Api
             services.AddSingleton(new FaceBookClient(client, settings.Facebook.ClientId, settings.Facebook.ClientSecret,settings.Facebook.RedirectUri));
 
             #region  ToDo ÅúÁ¿×¢Èë
-            services.AddScoped<IAuthService, AuthService>();
+            //services.AddScoped<IAuthService, AuthService>();
             #endregion
 
             services.AddCoreSwagger()

@@ -4,22 +4,26 @@ using System.Text;
 
 namespace FaceBook.Marketing.SDK.Models.AuthTokens
 {
-    public class CheckAuthTokenRequest : BaseRequest<CheckAuthTokenResponse, CheckAuthTokenParameter>
+    /// <summary>
+    /// 应用Token
+    /// </summary>
+    public class AppAuthTokenResponse
     {
-        public CheckAuthTokenRequest(CheckAuthTokenParameter data, string token) :base(data,token)
-        {
-
-        }
-        public override string Url => "/debug_token?input_token="+this.Data.input_token+"&access_token="+this.Data.access_token;
-    }
-
-    public class CheckAuthTokenParameter
-    {
-        public string input_token { get; set; }
         public string access_token { get; set; }
-
+        public string token_type { get; set; }
     }
-
+    /// <summary>
+    /// 用户Token
+    /// </summary>
+    public class UserAuthTokenResponse
+    {
+        public string access_token { get; set; }
+        public string token_type { get; set; }
+        public string expires_in { get; set; }
+    }
+    /// <summary>
+    /// 检查Token
+    /// </summary>
     public class CheckAuthTokenResponse
     {
         public Data data { get; set; }

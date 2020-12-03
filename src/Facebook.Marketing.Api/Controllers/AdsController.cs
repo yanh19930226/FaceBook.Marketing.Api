@@ -6,13 +6,12 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Facebook.Marketing.Api.Controllers
 {
-
     /// <summary>
-    /// 广告
+    /// 广告管理
     /// </summary>
-    [Route("Api/Marketing")]
+    [Route("Api/Ads")]
     [ApiController]
-    public class MarketingController : Controller
+    public class AdsController : Controller
     {
         /// <summary>
         /// 广告测试
@@ -20,7 +19,7 @@ namespace Facebook.Marketing.Api.Controllers
         /// <returns></returns>
         [Route("Test")]
         [HttpGet]
-        public IActionResult Test()
+        public IActionResult Index()
         {
             return Ok();
         }

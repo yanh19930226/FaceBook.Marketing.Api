@@ -10,6 +10,8 @@
 
   <ItemGroup>
     <Folder Include="Models\AdAccounts\" />
+    <Folder Include="Models\Ads\" />
+    <Folder Include="Models\Campaigns\" />
   </ItemGroup>
 
 </Project>

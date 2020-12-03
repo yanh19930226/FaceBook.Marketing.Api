@@ -9,12 +9,4 @@ namespace FaceBook.Marketing.SDK
         Dev,
         Prod
     }
-    public enum RequestEnum
-    {
-        Refresh,
-        User,
-        App,
-        Api,
-        Page
-    }
 }
