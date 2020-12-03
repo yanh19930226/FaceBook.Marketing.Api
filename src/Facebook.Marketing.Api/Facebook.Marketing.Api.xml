@@ -4,6 +4,13 @@
         <name>Facebook.Marketing.Api</name>
     </assembly>
     <members>
+        <member name="M:Facebook.Marketing.Api.Application.Services.IAdAccountService.GetAdAccountById(System.String)">
+            <summary>
+            根据Id获取广告账户
+            </summary>
+            <param name="accountId"></param>
+            <returns></returns>
+        </member>
         <member name="M:Facebook.Marketing.Api.Application.Services.IAuthService.GetTokenAppAsync">
             <summary>
             获取应用Token
@@ -29,10 +36,11 @@
             广告账户管理
             </summary>
         </member>
-        <member name="M:Facebook.Marketing.Api.Controllers.AdAccountsController.Test">
+        <member name="M:Facebook.Marketing.Api.Controllers.AdAccountsController.GetAdAccountById(System.String)">
             <summary>
-            广告账户测试
+            根据Id获取广告账户
             </summary>
+            <param name="adAccountId">广告账户Id</param>
             <returns></returns>
         </member>
         <member name="T:Facebook.Marketing.Api.Controllers.AdsController">

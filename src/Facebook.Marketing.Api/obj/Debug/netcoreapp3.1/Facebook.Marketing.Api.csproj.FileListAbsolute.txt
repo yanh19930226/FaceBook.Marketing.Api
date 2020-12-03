@@ -97,12 +97,6 @@ E:\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\bin\Debug\netcoreapp3.1\Fac
 E:\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\bin\Debug\netcoreapp3.1\FaceBook.Marketing.SDK.pdb
 E:\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\obj\Debug\netcoreapp3.1\Facebook.Marketing.Api.RazorTargetAssemblyInfo.cache
 E:\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\obj\Debug\netcoreapp3.1\Facebook.Marketing.Api.csproj.CopyComplete
-D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\obj\Debug\netcoreapp3.1\Facebook.Marketing.Api.csprojAssemblyReference.cache
-D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\obj\Debug\netcoreapp3.1\Facebook.Marketing.Api.AssemblyInfoInputs.cache
-D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\obj\Debug\netcoreapp3.1\Facebook.Marketing.Api.AssemblyInfo.cs
-D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\obj\Debug\netcoreapp3.1\Facebook.Marketing.Api.csproj.CoreCompileInputs.cache
-D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\obj\Debug\netcoreapp3.1\Facebook.Marketing.Api.MvcApplicationPartsAssemblyInfo.cs
-D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\obj\Debug\netcoreapp3.1\Facebook.Marketing.Api.MvcApplicationPartsAssemblyInfo.cache
 D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\bin\Debug\netcoreapp3.1\appsettings.Development.json
 D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\bin\Debug\netcoreapp3.1\appsettings.json
 D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -190,6 +184,12 @@ D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\bin\Debug\netcorea
 D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\bin\Debug\netcoreapp3.1\zh\DotNetCore.CAP.Dashboard.resources.dll
 D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\bin\Debug\netcoreapp3.1\FaceBook.Marketing.SDK.dll
 D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\bin\Debug\netcoreapp3.1\FaceBook.Marketing.SDK.pdb
+D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\obj\Debug\netcoreapp3.1\Facebook.Marketing.Api.csprojAssemblyReference.cache
+D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\obj\Debug\netcoreapp3.1\Facebook.Marketing.Api.AssemblyInfoInputs.cache
+D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\obj\Debug\netcoreapp3.1\Facebook.Marketing.Api.AssemblyInfo.cs
+D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\obj\Debug\netcoreapp3.1\Facebook.Marketing.Api.csproj.CoreCompileInputs.cache
+D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\obj\Debug\netcoreapp3.1\Facebook.Marketing.Api.MvcApplicationPartsAssemblyInfo.cs
+D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\obj\Debug\netcoreapp3.1\Facebook.Marketing.Api.MvcApplicationPartsAssemblyInfo.cache
 D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\obj\Debug\netcoreapp3.1\Facebook.Marketing.Api.RazorTargetAssemblyInfo.cache
 D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\obj\Debug\netcoreapp3.1\Facebook.Marketing.Api.csproj.CopyComplete
 D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\obj\Debug\netcoreapp3.1\staticwebassets\Facebook.Marketing.Api.StaticWebAssets.Manifest.cache

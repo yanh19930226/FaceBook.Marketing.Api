@@ -40,8 +40,8 @@ namespace Facebook.Marketing.Api
             var client = new HttpClient();
             services.AddSingleton(new FaceBookClient(client, settings.Facebook.ClientId, settings.Facebook.ClientSecret,settings.Facebook.RedirectUri));
 
-            #region  ToDo 批量注入
-            //services.AddScoped<IAuthService, AuthService>();
+            #region  ToDo 批量注入Services
+            services.AddScoped<IAdAccountService, AdAccountService>();
             #endregion
 
             services.AddCoreSwagger()

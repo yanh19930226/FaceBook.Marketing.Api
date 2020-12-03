@@ -6,17 +6,44 @@ namespace FaceBook.Marketing.SDK.Models
 {
     public abstract class BaseRequest<T,K>
     {
-        public BaseRequest(K data, string token)
+        public BaseRequest(K parameter, string token)
         {
             Token = token;
-            this.Data = data;
+            this.Parameter = parameter;
         }
-        public abstract string Url { get; }
         public string Token { get; set; }
-        public K Data { get; set; }
+        /// <summary>
+        /// 请求参数
+        /// </summary>
+        public K Parameter { get; set; }
+        /// <summary>
+        /// 请求地址
+        /// </summary>
+        public abstract string Url { get; }
+        /// <summary>
+        /// 返回字段
+        /// </summary>
+        public T ResponseFileds { get; set; }
     }
 
     public class BaseResponse
+    {
+
+    }
+
+    public  class Paging
+    {
+        public Cursors cursors { get; set; }
+
+        public string next { get; set; }
+    }
+    public class Cursors
+    {
+        public string before { get; set; }
+        public string after { get; set; }
+
+    }
+    public class Summary
     {
 
     }
