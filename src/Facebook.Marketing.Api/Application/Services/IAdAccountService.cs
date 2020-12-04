@@ -1,4 +1,5 @@
 ﻿using FaceBook.Marketing.SDK;
+using FaceBook.Marketing.SDK.Models;
 using FaceBook.Marketing.SDK.Models.AdAccounts;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,12 @@ namespace Facebook.Marketing.Api.Application.Services
         /// <param name="accountId"></param>
         /// <returns></returns>
         Task<FacebookResult<AdAccountResponse>> GetAdAccountById(string accountId);
+        /// <summary>
+        /// 根据广告账户获取分析
+        /// </summary>
+        /// <param name="accountId"></param>
+        /// <returns></returns>
+        Task<FacebookResult<BaseResponse<List<AdAccountInsightResponse>>>> GetAdAccountInsightById(string accountId);
 
     }
 }

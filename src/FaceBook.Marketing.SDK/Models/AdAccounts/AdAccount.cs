@@ -4,9 +4,9 @@ using System.Text;
 
 namespace FaceBook.Marketing.SDK.Models.AdAccounts
 {
-    public class AdAccountRequest : BaseRequest<AdAccountResponse, string>
+    public class AdAccountRequest : BaseRequest<string, AdAccountResponse, AdAccountResponse>
     {
-        public  AdAccountRequest(string adAccountId,string userToken,string parameter = null): base(parameter, userToken)
+        public  AdAccountRequest(string adAccountId, string userToken,string parameter=null) : base(userToken, parameter)
         {
             this.AdAccountId = adAccountId;
         }

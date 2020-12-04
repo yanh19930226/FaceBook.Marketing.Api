@@ -34,7 +34,7 @@ namespace Facebook.Marketing.Api.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        [Route("AppAccessToken")]
+        [Route("GetTokenAppAsync")]
         public async Task<FacebookResult<AppAuthTokenResponse>> GetTokenAppAsync()
         {
             var _client = new HttpClient();
@@ -84,7 +84,7 @@ namespace Facebook.Marketing.Api.Controllers
         /// <param name="code">授权码</param>
         /// <returns></returns>
         [HttpGet]
-        [Route("UserAccessToken")]
+        [Route("GetTokenUserAsync")]
         public async Task<FacebookResult<UserAuthTokenResponse>> GetTokenUserAsync(string code)
         {
 
@@ -114,13 +114,49 @@ namespace Facebook.Marketing.Api.Controllers
 
         }
         /// <summary>
+        /// 用户短期Token换取用户长期Token
+        /// </summary>
+        /// <param name="userToken">用户短期Token</param>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("GetLongTokenUserAsync")]
+        public async Task<FacebookResult<UserAuthTokenResponse>> GetLongTokenUserAsync(string userToken)
+        {
+
+            var _client = new HttpClient();
+
+            var res = new FacebookResult<UserAuthTokenResponse>();
+
+            var uri = "https://graph.facebook.com/v9.0/oauth/access_token?grant_type=fb_exchange_token&client_id=" + _settings.Facebook.ClientId  + "&client_secret=" + _settings.Facebook.ClientSecret + "&fb_exchange_token=" + userToken;
+
+            var httpResponse = await _client.GetAsync(uri);
+
+            var content = await httpResponse.Content.ReadAsStringAsync();
+
+            UserAuthTokenResponse obj = JsonConvert.DeserializeObject<UserAuthTokenResponse>(content);
+
+            if (httpResponse.StatusCode != HttpStatusCode.OK)
+            {
+                res.Failed(httpResponse.StatusCode.ToString());
+            }
+            else
+            {
+                res.Success(httpResponse.StatusCode.ToString());
+            }
+            res.Result = obj;
+
+            return res;
+
+        }
+
+        /// <summary>
         /// 检查Token
         /// </summary>
         /// <param name="needToCheckToken">要检查的Token</param>
         /// <param name="appToken">应用Token</param>
         /// <returns></returns>
         [HttpGet]
-        [Route("CheckToken")]
+        [Route("GetCheckAuthTokenAsync")]
         public async Task<FacebookResult<CheckAuthTokenResponse>> GetCheckAuthTokenAsync(string needToCheckToken,string appToken)
         {
             var _client = new HttpClient();

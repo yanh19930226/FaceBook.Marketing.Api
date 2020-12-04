@@ -36,12 +36,12 @@ namespace FaceBook.Marketing.SDK
         }
 
 
-        private PropertyInfo[] GetPropertyInfoArray<T,K>(BaseRequest<T, K> request)
+        private PropertyInfo[] GetPropertyInfoArray<T,K,V>(BaseRequest<T, K,V> request)
         {
             PropertyInfo[] props = null;
             try
             {
-                Type type = typeof(T);
+                Type type = typeof(K);
                 object obj = Activator.CreateInstance(type);
                 props = type.GetProperties(BindingFlags.Public | BindingFlags.Instance);
             }
@@ -167,19 +167,21 @@ namespace FaceBook.Marketing.SDK
         /// <typeparam name="T"></typeparam>
         /// <param name="request"></param>
         /// <returns></returns>
-        public async Task<FacebookResult<T>> GetAsync<T, K>(BaseRequest<T, K> request)
+        public async Task<FacebookResult<V>> GetAsync<T, K, V>(BaseRequest<T, K,V> request)
         {
             var url = "";
 
-            FacebookResult<T> result = new FacebookResult<T>();
+            FacebookResult<V> result = new FacebookResult<V>();
 
             #region 构建请求地址
+
+            _client.DefaultRequestHeaders.Clear();
 
             _client.DefaultRequestHeaders.Add("Authorization", "Bearer " + request.Token);
 
             var filedsStr = "?fields=";
 
-            var props=GetPropertyInfoArray<T, K>(request);
+            var props=GetPropertyInfoArray<T, K,V>(request);
 
             filedsStr+=props.Select(p=>p.Name).Aggregate((x, y) => x + "," + y);
 
@@ -187,7 +189,15 @@ namespace FaceBook.Marketing.SDK
 
             var paraStr=ConcatQueryString(parameterDic);
 
-            url ="https://graph.facebook.com/v9.0/"+request.Url+filedsStr + paraStr;
+            if (string.IsNullOrEmpty(paraStr)==false)
+            {
+                url = "https://graph.facebook.com/v9.0/" + request.Url + filedsStr +"&"+ paraStr;
+            }
+            else
+            {
+                url = "https://graph.facebook.com/v9.0/" + request.Url + filedsStr;
+            }
+           
 
             #endregion
 
@@ -195,7 +205,7 @@ namespace FaceBook.Marketing.SDK
 
             var content = await httpResponse.Content.ReadAsStringAsync();
 
-            T obj = JsonConvert.DeserializeObject<T>(content);
+            V obj = JsonConvert.DeserializeObject<V>(content);
 
             if (httpResponse.StatusCode != HttpStatusCode.OK)
             {
@@ -209,50 +219,50 @@ namespace FaceBook.Marketing.SDK
 
             return await Task.FromResult(result);
         }
-        /// <summary>
-        /// Post方法
-        /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="request"></param>
-        /// <returns></returns>
-        public async Task<FacebookResult<T>> PostAsync<T, K>(BaseRequest<T, K> request)
-        {
-            FacebookResult<T> result = new FacebookResult<T>();
+        ///// <summary>
+        ///// Post方法
+        ///// </summary>
+        ///// <typeparam name="T"></typeparam>
+        ///// <param name="request"></param>
+        ///// <returns></returns>
+        //public async Task<FacebookResult<T>> PostAsync<T, K>(BaseRequest<T, K> request)
+        //{
+        //    FacebookResult<T> result = new FacebookResult<T>();
 
-            var url = request.Url;
+        //    var url = request.Url;
 
-            var httpResponse = await _client.PostAsync(url, new JsonContent(new { request.Parameter }));
+        //    var httpResponse = await _client.PostAsync(url, new JsonContent(new { request.Parameter }));
 
-            var content = await httpResponse.Content.ReadAsStringAsync();
+        //    var content = await httpResponse.Content.ReadAsStringAsync();
 
-            T obj = JsonConvert.DeserializeObject<T>(content);
+        //    T obj = JsonConvert.DeserializeObject<T>(content);
 
-            if (httpResponse.StatusCode != HttpStatusCode.OK)
-            {
-                result.Failed(httpResponse.StatusCode.ToString());
-            }
-            else
-            {
-                result.Success(httpResponse.StatusCode.ToString());
-            }
-            result.Result = obj;
+        //    if (httpResponse.StatusCode != HttpStatusCode.OK)
+        //    {
+        //        result.Failed(httpResponse.StatusCode.ToString());
+        //    }
+        //    else
+        //    {
+        //        result.Success(httpResponse.StatusCode.ToString());
+        //    }
+        //    result.Result = obj;
 
-            return await Task.FromResult(result);
-        }
-        /// <summary>
-        /// Delete方法
-        /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <typeparam name="K"></typeparam>
-        /// <param name="request"></param>
-        /// <returns></returns>
-        public async Task<FacebookResult<T>>DeleteAsync<T,K>(BaseRequest<T, K> request)
-        {
+        //    return await Task.FromResult(result);
+        //}
+        ///// <summary>
+        ///// Delete方法
+        ///// </summary>
+        ///// <typeparam name="T"></typeparam>
+        ///// <typeparam name="K"></typeparam>
+        ///// <param name="request"></param>
+        ///// <returns></returns>
+        //public async Task<FacebookResult<T>>DeleteAsync<T,K>(BaseRequest<T, K> request)
+        //{
 
-            FacebookResult<T> result = new FacebookResult<T>();
+        //    FacebookResult<T> result = new FacebookResult<T>();
 
-            return await Task.FromResult(result);
-        }
+        //    return await Task.FromResult(result);
+        //}
 
     }
 }
