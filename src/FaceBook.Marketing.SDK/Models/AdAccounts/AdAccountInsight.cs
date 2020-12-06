@@ -4,7 +4,7 @@ using System.Text;
 
 namespace FaceBook.Marketing.SDK.Models.AdAccounts
 {
-    public class AdAccountInsightRequest : BaseRequest<AdAccountInsightParameter, AdAccountInsightResponse,BaseResponse<List<AdAccountInsightResponse>>>
+    public class AdAccountInsightRequest : BaseRequest<AdAccountInsightParameter, AdAccountInsightResponse,PageResponse<List<AdAccountInsightResponse>>>
     {
         public AdAccountInsightRequest(string adAccountId, string userToken, AdAccountInsightParameter parameter) : base(userToken, parameter)
         {

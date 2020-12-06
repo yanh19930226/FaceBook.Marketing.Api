@@ -86,9 +86,9 @@ E:\FaceBook.Marketing.Api\tests\FaceBookSDKTests\bin\Debug\netcoreapp3.1\zh-Hans
 E:\FaceBook.Marketing.Api\tests\FaceBookSDKTests\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 E:\FaceBook.Marketing.Api\tests\FaceBookSDKTests\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 E:\FaceBook.Marketing.Api\tests\FaceBookSDKTests\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+E:\FaceBook.Marketing.Api\tests\FaceBookSDKTests\obj\Debug\netcoreapp3.1\FaceBookSDKTests.csprojAssemblyReference.cache
 E:\FaceBook.Marketing.Api\tests\FaceBookSDKTests\obj\Debug\netcoreapp3.1\FaceBookSDKTests.AssemblyInfoInputs.cache
 E:\FaceBook.Marketing.Api\tests\FaceBookSDKTests\obj\Debug\netcoreapp3.1\FaceBookSDKTests.AssemblyInfo.cs
 E:\FaceBook.Marketing.Api\tests\FaceBookSDKTests\obj\Debug\netcoreapp3.1\FaceBookSDKTests.csproj.CopyComplete
 E:\FaceBook.Marketing.Api\tests\FaceBookSDKTests\obj\Debug\netcoreapp3.1\FaceBookSDKTests.dll
 E:\FaceBook.Marketing.Api\tests\FaceBookSDKTests\obj\Debug\netcoreapp3.1\FaceBookSDKTests.pdb
-E:\FaceBook.Marketing.Api\tests\FaceBookSDKTests\obj\Debug\netcoreapp3.1\FaceBookSDKTests.csprojAssemblyReference.cache

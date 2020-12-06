@@ -46,7 +46,7 @@ namespace Facebook.Marketing.Api.Controllers
         /// <returns></returns>
         [Route("GetAdAccountInsightById")]
         [HttpGet]
-        public async Task<FacebookResult<BaseResponse<List<AdAccountInsightResponse>>>> GetAdAccountInsightById(string adAccountId)
+        public async Task<FacebookResult<PageResponse<List<AdAccountInsightResponse>>>> GetAdAccountInsightById(string adAccountId)
         {
 
             var res = await _service.GetAdAccountInsightById(adAccountId);

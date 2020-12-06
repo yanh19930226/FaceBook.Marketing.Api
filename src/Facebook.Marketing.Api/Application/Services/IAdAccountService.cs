@@ -21,7 +21,7 @@ namespace Facebook.Marketing.Api.Application.Services
         /// </summary>
         /// <param name="accountId"></param>
         /// <returns></returns>
-        Task<FacebookResult<BaseResponse<List<AdAccountInsightResponse>>>> GetAdAccountInsightById(string accountId);
+        Task<FacebookResult<PageResponse<List<AdAccountInsightResponse>>>> GetAdAccountInsightById(string accountId);
 
     }
 }

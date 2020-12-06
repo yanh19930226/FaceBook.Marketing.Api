@@ -219,36 +219,48 @@ namespace FaceBook.Marketing.SDK
 
             return await Task.FromResult(result);
         }
-        ///// <summary>
-        ///// Post方法
-        ///// </summary>
-        ///// <typeparam name="T"></typeparam>
-        ///// <param name="request"></param>
-        ///// <returns></returns>
-        //public async Task<FacebookResult<T>> PostAsync<T, K>(BaseRequest<T, K> request)
-        //{
-        //    FacebookResult<T> result = new FacebookResult<T>();
+        /// <summary>
+        /// Post方法
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="request"></param>
+        /// <returns></returns>
+        public async Task<FacebookResult<T>> PostAsync<T, K, V>(BaseRequest<T, K, V> request)
+        {
+            FacebookResult<T> result = new FacebookResult<T>();
 
-        //    var url = request.Url;
+            _client.DefaultRequestHeaders.Clear();
 
-        //    var httpResponse = await _client.PostAsync(url, new JsonContent(new { request.Parameter }));
+            _client.DefaultRequestHeaders.Add("Authorization", "Bearer " + request.Token);
 
-        //    var content = await httpResponse.Content.ReadAsStringAsync();
+            var url = "";
 
-        //    T obj = JsonConvert.DeserializeObject<T>(content);
+            var filedsStr = "?fields=";
 
-        //    if (httpResponse.StatusCode != HttpStatusCode.OK)
-        //    {
-        //        result.Failed(httpResponse.StatusCode.ToString());
-        //    }
-        //    else
-        //    {
-        //        result.Success(httpResponse.StatusCode.ToString());
-        //    }
-        //    result.Result = obj;
+            var props = GetPropertyInfoArray<T, K, V>(request);
 
-        //    return await Task.FromResult(result);
-        //}
+            filedsStr += props.Select(p => p.Name).Aggregate((x, y) => x + "," + y);
+
+            url = "https://graph.facebook.com/v9.0/" + request.Url + filedsStr;
+
+            var httpResponse = await _client.PostAsync(url, new JsonContent(new { request.Parameter }));
+
+            var content = await httpResponse.Content.ReadAsStringAsync();
+
+            T obj = JsonConvert.DeserializeObject<T>(content);
+
+            if (httpResponse.StatusCode != HttpStatusCode.OK)
+            {
+                result.Failed(httpResponse.StatusCode.ToString());
+            }
+            else
+            {
+                result.Success(httpResponse.StatusCode.ToString());
+            }
+            result.Result = obj;
+
+            return await Task.FromResult(result);
+        }
         ///// <summary>
         ///// Delete方法
         ///// </summary>

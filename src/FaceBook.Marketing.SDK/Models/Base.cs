@@ -36,13 +36,16 @@ namespace FaceBook.Marketing.SDK.Models
         public abstract string Url { get; }
     }
    
-    public class BaseResponse<K>
+    public class PageResponse<K>
     {
         public K data { get; set; }
 
         public Paging paging { get; set; }
+    }
 
-        //public Summary summary { get; set; }
+    public class ListResponse<K>
+    {
+        public K data { get; set; }
     }
 
     public  class Paging
@@ -56,9 +59,6 @@ namespace FaceBook.Marketing.SDK.Models
         public string before { get; set; }
         public string after { get; set; }
 
-    }
-    public class Summary
-    {
     }
 
     #region Json

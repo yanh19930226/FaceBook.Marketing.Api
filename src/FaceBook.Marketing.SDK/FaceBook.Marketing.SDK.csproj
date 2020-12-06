@@ -9,6 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Models\AdSets\" />
     <Folder Include="Models\Campaigns\" />
   </ItemGroup>
 

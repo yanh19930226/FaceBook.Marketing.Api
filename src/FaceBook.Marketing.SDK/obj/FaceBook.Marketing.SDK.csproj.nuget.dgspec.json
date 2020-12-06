@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Work\\ERP\\FaceBook.Marketing.Api\\src\\FaceBook.Marketing.SDK\\FaceBook.Marketing.SDK.csproj": {}
+    "E:\\FaceBook.Marketing.Api\\src\\FaceBook.Marketing.SDK\\FaceBook.Marketing.SDK.csproj": {}
   },
   "projects": {
-    "D:\\Work\\ERP\\FaceBook.Marketing.Api\\src\\FaceBook.Marketing.SDK\\FaceBook.Marketing.SDK.csproj": {
+    "E:\\FaceBook.Marketing.Api\\src\\FaceBook.Marketing.SDK\\FaceBook.Marketing.SDK.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Work\\ERP\\FaceBook.Marketing.Api\\src\\FaceBook.Marketing.SDK\\FaceBook.Marketing.SDK.csproj",
+        "projectUniqueName": "E:\\FaceBook.Marketing.Api\\src\\FaceBook.Marketing.SDK\\FaceBook.Marketing.SDK.csproj",
         "projectName": "FaceBook.Marketing.SDK",
-        "projectPath": "D:\\Work\\ERP\\FaceBook.Marketing.Api\\src\\FaceBook.Marketing.SDK\\FaceBook.Marketing.SDK.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Work\\ERP\\FaceBook.Marketing.Api\\src\\FaceBook.Marketing.SDK\\obj\\",
+        "projectPath": "E:\\FaceBook.Marketing.Api\\src\\FaceBook.Marketing.SDK\\FaceBook.Marketing.SDK.csproj",
+        "packagesPath": "C:\\Users\\89136\\.nuget\\packages\\",
+        "outputPath": "E:\\FaceBook.Marketing.Api\\src\\FaceBook.Marketing.SDK\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\89136\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,6 +27,7 @@
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "http://120.78.1.82:8081/repository/nuget-hosted/": {},
           "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.cdn.azure.cn/v3/index.json": {},
           "https://nuget.cnblogs.com/v3/index.json": {}
         },
         "frameworks": {
@@ -63,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview3-014645\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -107,5 +107,120 @@
             <param name="appToken">应用Token</param>
             <returns></returns>
         </member>
+        <member name="T:Facebook.Marketing.Api.Controllers.BusinessAssetGroupController">
+            <summary>
+            资产组管理
+            </summary>
+        </member>
+        <member name="M:Facebook.Marketing.Api.Controllers.BusinessAssetGroupController.GetBusinessAssetGroupList(System.String)">
+            <summary>
+            获取资产组列表
+            </summary>
+            <param name="businessId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Facebook.Marketing.Api.Controllers.BusinessAssetGroupController.GetBusinessAssetGroupById(System.String)">
+            <summary>
+            获取资产组列表
+            </summary>
+            <param name="businessId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Facebook.Marketing.Api.Controllers.BusinessManagerController">
+            <summary>
+            商务平台管理
+            </summary>
+        </member>
+        <member name="M:Facebook.Marketing.Api.Controllers.BusinessManagerController.GetBusinessManagerPageList">
+            <summary>
+            获取商务管理平台列表
+            </summary>
+            <param name="businessId">商务管理平台Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:Facebook.Marketing.Api.Controllers.BusinessManagerController.GetBusinessManagerById(System.String)">
+            <summary>
+            Id获取商务管理平台
+            </summary>
+            <param name="businessId">商务管理平台Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:Facebook.Marketing.Api.Controllers.BusinessManagerController.UpdateBusinessManagerById(System.String)">
+            <summary>
+            Id修改商务管理平台
+            </summary>
+            <param name="businessId">商务管理平台Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:Facebook.Marketing.Api.Controllers.BusinessManagerController.InviteUserToBusinessManager(System.String)">
+            <summary>
+            邀请用户加入商务管理平台
+            </summary>
+            <param name="businessId">商务管理平台Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:Facebook.Marketing.Api.Controllers.BusinessManagerController.GetAllBusinessUsers(System.String,FaceBook.Marketing.SDK.Models.BusinessManagers.BusinessUserEnum)">
+            <summary>
+            获取商务管理平台用户
+            </summary>
+            <param name="businessId">商务管理平台Id</param>
+            <param name="BusinessUserEnum">用户类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:Facebook.Marketing.Api.Controllers.BusinessManagerController.UpdateBusinessUserRole(System.String,FaceBook.Marketing.SDK.Models.BusinessManagers.BusinessUserEnum)">
+            <summary>
+            修改商务管理平台用户角色(TODO)
+            </summary>
+            <param name="businessId">商务管理平台Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:Facebook.Marketing.Api.Controllers.BusinessManagerController.DeleteBusinessUser(System.String,FaceBook.Marketing.SDK.Models.BusinessManagers.BusinessUserEnum)">
+            <summary>
+            删除商务管理平台用户(TODO)
+            </summary>
+            <param name="businessId">商务管理平台Id</param>
+            <returns></returns>
+        </member>
+        <member name="T:Facebook.Marketing.Api.Controllers.SystemUserController">
+            <summary>
+            系统用户管理
+            </summary>
+        </member>
+        <member name="M:Facebook.Marketing.Api.Controllers.SystemUserController.CreateSystemUser">
+            <summary>
+            创建系统管理员
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Facebook.Marketing.Api.Controllers.SystemUserController.SystemUserInstallApp">
+            <summary>
+            系统用户安装应用
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Facebook.Marketing.Api.Controllers.SystemUserController.GetSystemUserToken">
+            <summary>
+            生成系统用户口令
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Facebook.Marketing.Api.Controllers.SystemUserController.GetSystemUserPermission">
+            <summary>
+            获取系统用户权限(Pending)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Facebook.Marketing.Api.Controllers.SystemUserController.SystemUserAdAccount">
+            <summary>
+            系统用户分配广告账户
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Facebook.Marketing.Api.Controllers.SystemUserController.SystemUserPage">
+            <summary>
+            系统用户分配主页
+            </summary>
+            <returns></returns>
+        </member>
     </members>
 </doc>

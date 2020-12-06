@@ -27,7 +27,7 @@ namespace Facebook.Marketing.Api.Application.Services.Impl
             return await _client.GetAsync(request);
         }
 
-        public async Task<FacebookResult<BaseResponse<List<AdAccountInsightResponse>>>> GetAdAccountInsightById(string accountId)
+        public async Task<FacebookResult<PageResponse<List<AdAccountInsightResponse>>>> GetAdAccountInsightById(string accountId)
         {
             var userToken = "EAACw6XEnA5QBAAZBz5P66k1v85S5cx5bOOXxMXVAPNZCazasfFHHG1TQeEUlwIPxvDblvrWSmAIYDXpNAuzxGksibr6JKdDjtQw27w9t1xdGyW6tDFEZCP6aMYo6KDZAdAMKxiBXfIt6y5ZA0dNhn0qLoh3NhaKgYv4ExZAOUF4DNORZAwGvp1VrO3xYVLFGKfDZCDLZAQ90YcweRo0VsXERxJXHSUwMrgoWLZCoDbx7EQlLthWBBCqxx0NPgrrLni8zsZD";
 
