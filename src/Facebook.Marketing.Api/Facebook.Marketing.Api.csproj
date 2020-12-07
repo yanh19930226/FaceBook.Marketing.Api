@@ -8,6 +8,10 @@
     <DocumentationFile>D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\Facebook.Marketing.Api.xml</DocumentationFile>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\Facebook.Marketing.Api.xml</DocumentationFile>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="Core" Version="1.0.3" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
