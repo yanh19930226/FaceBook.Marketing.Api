@@ -17,7 +17,7 @@ namespace Facebook.Marketing.Api.Controllers
         /// 广告测试
         /// </summary>
         /// <returns></returns>
-        [Route("Test")]
+        [Route("Index")]
         [HttpGet]
         public IActionResult Index()
         {
