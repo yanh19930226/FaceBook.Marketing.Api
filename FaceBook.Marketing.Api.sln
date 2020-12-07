@@ -13,14 +13,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FaceBook.Marketing.SDK", "s
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FaceBookSDKTests", "tests\FaceBookSDKTests\FaceBookSDKTests.csproj", "{DC872C5C-C392-4BB2-93F8-C5A464B10B95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacebookAdsExamples", "C:\Users\Admin\Desktop\Facebook-CSharp-Ads-SDK-master\Facebook-CSharp-Ads-SDK-master\src\FacebookAds\FacebookAdsExamples\FacebookAdsExamples.csproj", "{71403407-65B0-4A5F-9E3A-4C3AF4B8104B}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacebookAds", "C:\Users\Admin\Desktop\Facebook-CSharp-Ads-SDK-master\Facebook-CSharp-Ads-SDK-master\src\FacebookAds\FacebookAds\FacebookAds.csproj", "{DA2AAA73-9BBC-4CB1-A8F5-1AF3DEECEB89}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacebookAdsTests", "C:\Users\Admin\Desktop\Facebook-CSharp-Ads-SDK-master\Facebook-CSharp-Ads-SDK-master\src\FacebookAds\FacebookAdsTests\FacebookAdsTests.csproj", "{FD0F5E21-9EDA-4A7E-AB10-C5A5B6372D1E}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Adou.TWUSA.SDK", "..\..\Warehouse\Warehouse\Warehouse\src\Adou.TWUSA.SDK\Adou.TWUSA.SDK.csproj", "{500D4360-B2B6-467B-ADBB-90AD068E0FF2}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,22 +31,6 @@ Global
 		{DC872C5C-C392-4BB2-93F8-C5A464B10B95}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC872C5C-C392-4BB2-93F8-C5A464B10B95}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC872C5C-C392-4BB2-93F8-C5A464B10B95}.Release|Any CPU.Build.0 = Release|Any CPU
-		{71403407-65B0-4A5F-9E3A-4C3AF4B8104B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{71403407-65B0-4A5F-9E3A-4C3AF4B8104B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{71403407-65B0-4A5F-9E3A-4C3AF4B8104B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{71403407-65B0-4A5F-9E3A-4C3AF4B8104B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DA2AAA73-9BBC-4CB1-A8F5-1AF3DEECEB89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DA2AAA73-9BBC-4CB1-A8F5-1AF3DEECEB89}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DA2AAA73-9BBC-4CB1-A8F5-1AF3DEECEB89}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DA2AAA73-9BBC-4CB1-A8F5-1AF3DEECEB89}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FD0F5E21-9EDA-4A7E-AB10-C5A5B6372D1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FD0F5E21-9EDA-4A7E-AB10-C5A5B6372D1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FD0F5E21-9EDA-4A7E-AB10-C5A5B6372D1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FD0F5E21-9EDA-4A7E-AB10-C5A5B6372D1E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{500D4360-B2B6-467B-ADBB-90AD068E0FF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{500D4360-B2B6-467B-ADBB-90AD068E0FF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{500D4360-B2B6-467B-ADBB-90AD068E0FF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{500D4360-B2B6-467B-ADBB-90AD068E0FF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,10 +39,6 @@ Global
 		{A4389494-C458-47C7-A84D-982DB61C4799} = {69352B89-2A1D-445F-BE0D-8E948552B8B8}
 		{75EAA91C-F82E-434C-A43E-C50874334AAF} = {69352B89-2A1D-445F-BE0D-8E948552B8B8}
 		{DC872C5C-C392-4BB2-93F8-C5A464B10B95} = {BB6AB227-0583-4EC8-BA92-AE8281DF08B1}
-		{71403407-65B0-4A5F-9E3A-4C3AF4B8104B} = {69352B89-2A1D-445F-BE0D-8E948552B8B8}
-		{DA2AAA73-9BBC-4CB1-A8F5-1AF3DEECEB89} = {69352B89-2A1D-445F-BE0D-8E948552B8B8}
-		{FD0F5E21-9EDA-4A7E-AB10-C5A5B6372D1E} = {69352B89-2A1D-445F-BE0D-8E948552B8B8}
-		{500D4360-B2B6-467B-ADBB-90AD068E0FF2} = {69352B89-2A1D-445F-BE0D-8E948552B8B8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {76C7BDAA-E96C-43AB-92B2-B4CFDA3DF124}

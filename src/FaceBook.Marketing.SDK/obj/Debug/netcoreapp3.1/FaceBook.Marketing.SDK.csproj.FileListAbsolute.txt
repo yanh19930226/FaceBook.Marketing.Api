@@ -6,12 +6,12 @@ E:\FaceBook.Marketing.Api\src\FaceBook.Marketing.SDK\obj\Debug\netcoreapp3.1\Fac
 E:\FaceBook.Marketing.Api\src\FaceBook.Marketing.SDK\obj\Debug\netcoreapp3.1\FaceBook.Marketing.SDK.dll
 E:\FaceBook.Marketing.Api\src\FaceBook.Marketing.SDK\obj\Debug\netcoreapp3.1\FaceBook.Marketing.SDK.pdb
 E:\FaceBook.Marketing.Api\src\FaceBook.Marketing.SDK\obj\Debug\netcoreapp3.1\FaceBook.Marketing.SDK.csprojAssemblyReference.cache
-D:\Work\ERP\FaceBook.Marketing.Api\src\FaceBook.Marketing.SDK\obj\Debug\netcoreapp3.1\FaceBook.Marketing.SDK.AssemblyInfoInputs.cache
-D:\Work\ERP\FaceBook.Marketing.Api\src\FaceBook.Marketing.SDK\obj\Debug\netcoreapp3.1\FaceBook.Marketing.SDK.AssemblyInfo.cs
-D:\Work\ERP\FaceBook.Marketing.Api\src\FaceBook.Marketing.SDK\obj\Debug\netcoreapp3.1\FaceBook.Marketing.SDK.csproj.CoreCompileInputs.cache
 D:\Work\ERP\FaceBook.Marketing.Api\src\FaceBook.Marketing.SDK\bin\Debug\netcoreapp3.1\FaceBook.Marketing.SDK.deps.json
 D:\Work\ERP\FaceBook.Marketing.Api\src\FaceBook.Marketing.SDK\bin\Debug\netcoreapp3.1\FaceBook.Marketing.SDK.dll
 D:\Work\ERP\FaceBook.Marketing.Api\src\FaceBook.Marketing.SDK\bin\Debug\netcoreapp3.1\FaceBook.Marketing.SDK.pdb
+D:\Work\ERP\FaceBook.Marketing.Api\src\FaceBook.Marketing.SDK\obj\Debug\netcoreapp3.1\FaceBook.Marketing.SDK.AssemblyInfoInputs.cache
+D:\Work\ERP\FaceBook.Marketing.Api\src\FaceBook.Marketing.SDK\obj\Debug\netcoreapp3.1\FaceBook.Marketing.SDK.AssemblyInfo.cs
+D:\Work\ERP\FaceBook.Marketing.Api\src\FaceBook.Marketing.SDK\obj\Debug\netcoreapp3.1\FaceBook.Marketing.SDK.csproj.CoreCompileInputs.cache
 D:\Work\ERP\FaceBook.Marketing.Api\src\FaceBook.Marketing.SDK\obj\Debug\netcoreapp3.1\FaceBook.Marketing.SDK.dll
 D:\Work\ERP\FaceBook.Marketing.Api\src\FaceBook.Marketing.SDK\obj\Debug\netcoreapp3.1\FaceBook.Marketing.SDK.pdb
 D:\Work\ERP\FaceBook.Marketing.Api\src\FaceBook.Marketing.SDK\obj\Debug\netcoreapp3.1\FaceBook.Marketing.SDK.csprojAssemblyReference.cache

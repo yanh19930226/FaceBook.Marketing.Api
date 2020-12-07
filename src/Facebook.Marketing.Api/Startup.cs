@@ -42,6 +42,7 @@ namespace Facebook.Marketing.Api
 
             #region  ToDo ÅúÁ¿×¢ÈëServices
             services.AddScoped<IAdAccountService, AdAccountService>();
+            services.AddScoped<IBusinessManagerService, BusinessManagerService>();
             #endregion
 
             services.AddCoreSwagger()
