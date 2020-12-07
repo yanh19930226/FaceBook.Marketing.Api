@@ -68,6 +68,12 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:Facebook.Marketing.Api.Controllers.AdsController.Test">
+            <summary>
+            Test
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:Facebook.Marketing.Api.Controllers.AuthController">
             <summary>
             权限认证管理

@@ -23,5 +23,15 @@ namespace Facebook.Marketing.Api.Controllers
         {
             return Ok();
         }
+        /// <summary>
+        /// Test
+        /// </summary>
+        /// <returns></returns>
+        [Route("Test")]
+        [HttpGet]
+        public IActionResult Test()
+        {
+            return Ok();
+        }
     }
 }
