@@ -107,6 +107,32 @@
             <param name="appToken">应用Token</param>
             <returns></returns>
         </member>
+        <member name="T:Facebook.Marketing.Api.Controllers.BusinessAssetController">
+            <summary>
+            资产管理
+            </summary>
+        </member>
+        <member name="M:Facebook.Marketing.Api.Controllers.BusinessAssetController.GetBusinessManagerPageList(System.String)">
+            <summary>
+            获取商务管理广告账户
+            </summary>
+            <param name="businessId">商务管理平台Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:Facebook.Marketing.Api.Controllers.BusinessAssetController.CreateAdAccount(System.String)">
+             <summary>
+            创建广告账户(TODO)
+             </summary>
+             <param name="businessId">商务管理平台Id</param>
+             <returns></returns>
+        </member>
+        <member name="M:Facebook.Marketing.Api.Controllers.BusinessAssetController.DeleteAdAccount(System.String)">
+             <summary>
+            删除广告账户(TODO)
+             </summary>
+             <param name="businessId">商务管理平台Id</param>
+             <returns></returns>
+        </member>
         <member name="T:Facebook.Marketing.Api.Controllers.BusinessAssetGroupController">
             <summary>
             资产组管理
