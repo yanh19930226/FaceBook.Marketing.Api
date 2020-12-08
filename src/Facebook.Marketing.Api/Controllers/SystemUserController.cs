@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Facebook.Marketing.Api.Application.Services;
 using FaceBook.Marketing.SDK;
+using FaceBook.Marketing.SDK.Models;
 using FaceBook.Marketing.SDK.Models.SystemUsers;
 using Microsoft.AspNetCore.Mvc;
 
@@ -42,12 +43,12 @@ namespace Facebook.Marketing.Api.Controllers
         /// <returns></returns>
         [Route("SystemUserInstallApp")]
         [HttpPost]
-        public async Task<FacebookResult<CreateSystemUserResponse>> SystemUserInstallApp()
+        public async Task<FacebookResult<SystemUserInstallAppResponse>> SystemUserInstallApp(string businessScopeUserId,string AppId)
         {
 
-            var res = await _service.CreateSystemUser();
+            var res = await _service.SystemUserInstallApp(businessScopeUserId, AppId);
 
-            return null;
+            return res;
 
         }
         /// <summary>
@@ -64,7 +65,6 @@ namespace Facebook.Marketing.Api.Controllers
             return null;
 
         }
-
         /// <summary>
         /// 获取系统用户权限(Pending)
         /// </summary>
@@ -79,7 +79,6 @@ namespace Facebook.Marketing.Api.Controllers
             return null;
 
         }
-
         /// <summary>
         /// 系统用户分配广告账户
         /// </summary>
@@ -106,6 +105,36 @@ namespace Facebook.Marketing.Api.Controllers
             var res = await _service.CreateSystemUser();
 
             return null;
+
+        }
+        /// <summary>
+        /// 获取系统用户的管理的广告账户
+        /// </summary>
+        /// <param name="businessScopeUserId"></param>
+        /// <returns></returns>
+        [Route("GetAssignedAdAccounts")]
+        [HttpGet]
+        public async Task<FacebookResult<PageResponse<List<AssignedAdAccountResponse>>>> GetAssignedAdAccounts(string businessScopeUserId)
+        {
+
+            var res = await _service.GetAssignedAdAccounts(businessScopeUserId);
+
+            return res;
+
+        }
+        /// <summary>
+        /// 获取系统用户的管理的主页
+        /// </summary>
+        /// <param name="businessScopeUserId"></param>
+        /// <returns></returns>
+        [Route("GetAssignedPages")]
+        [HttpGet]
+        public async Task<FacebookResult<PageResponse<List<AssignedAdAccountResponse>>>> GetAssignedPages(string businessScopeUserId)
+        {
+
+            var res = await _service.GetAssignedAdAccounts(businessScopeUserId);
+
+            return res;
 
         }
     }

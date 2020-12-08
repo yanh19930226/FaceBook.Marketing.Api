@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Reflection;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web;
@@ -36,6 +37,16 @@ namespace FaceBook.Marketing.SDK
         }
 
 
+        private  string SHA256(string str)
+        {
+            byte[] SHA256Data = Encoding.UTF8.GetBytes(str);
+
+            SHA256Managed Sha256 = new SHA256Managed();
+            byte[] by = Sha256.ComputeHash(SHA256Data);
+
+            return BitConverter.ToString(by).Replace("-", "").ToLower(); //64
+        }
+
         private PropertyInfo[] GetPropertyInfoArray<T,K,V>(BaseRequest<T, K,V> request)
         {
             PropertyInfo[] props = null;
@@ -49,7 +60,6 @@ namespace FaceBook.Marketing.SDK
             { }
             return props;
         }
-
 
         private class JsonContent : StringContent
         {

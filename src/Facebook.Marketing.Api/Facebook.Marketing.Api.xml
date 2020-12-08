@@ -254,5 +254,11 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:Facebook.Marketing.Api.Controllers.SystemUserController.GetAssignedAdAccounts(System.String)">
+            <summary>
+            获取系统用户的管理的广告账户
+            </summary>
+            <returns></returns>
+        </member>
     </members>
 </doc>

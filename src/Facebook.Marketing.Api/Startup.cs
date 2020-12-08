@@ -44,6 +44,7 @@ namespace Facebook.Marketing.Api
             services.AddScoped<IAdAccountService, AdAccountService>();
             services.AddScoped<IBusinessManagerService, BusinessManagerService>();
             services.AddScoped<IBusinessAssetService, BusinessAssetService>();
+            services.AddScoped<ISystemUserService, SystemUserService>();
             #endregion
 
             services.AddCoreSwagger()

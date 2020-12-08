@@ -17,6 +17,7 @@
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
+          "D:\\Work\\ERP\\FaceBook.Marketing.Api\\NuGet.Config",
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +27,9 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "http://120.78.1.82:8081/repository/nuget-hosted/": {},
+          "http://120.78.1.82:8081/repository/nuget-hosted/": {},
           "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.cdn.azure.cn/v3/index.json": {},
           "https://nuget.cnblogs.com/v3/index.json": {}
         },
         "frameworks": {
@@ -91,6 +94,7 @@
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
+          "D:\\Work\\ERP\\FaceBook.Marketing.Api\\NuGet.Config",
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -100,7 +104,9 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "http://120.78.1.82:8081/repository/nuget-hosted/": {},
+          "http://120.78.1.82:8081/repository/nuget-hosted/": {},
           "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.cdn.azure.cn/v3/index.json": {},
           "https://nuget.cnblogs.com/v3/index.json": {}
         },
         "frameworks": {

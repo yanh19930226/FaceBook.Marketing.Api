@@ -72,9 +72,9 @@ namespace Facebook.Marketing.Api.Controllers
         {
             var res = new FacebookResult<string>();
 
-            //var uri = "https://www.facebook.com/v9.0/dialog/oauth?client_id=" + _settings.Facebook.ClientId + "&redirect_uri=" + _settings.Facebook.RedirectUri + "&response_type=code";
+            var uri = "https://www.facebook.com/v9.0/dialog/oauth?client_id=" + _settings.Facebook.ClientId + "&redirect_uri=" + _settings.Facebook.RedirectUri + "&response_type=code";
 
-            var uri = "https://www.facebook.com/v9.0/dialog/oauth?client_id=" + _settings.Facebook.ClientId + "&redirect_uri=" + _settings.Facebook.RedirectUri + "&scope=ads_management,ads_read,email,public_profile" + "&response_type=code";
+            //var uri = "https://www.facebook.com/v9.0/dialog/oauth?client_id=" + _settings.Facebook.ClientId + "&redirect_uri=" + _settings.Facebook.RedirectUri + "&scope=ads_management,ads_read,email,public_profile" + "&response_type=code";
 
             res.Success(uri, FacebookResultCode.Succeed.ToString());
 

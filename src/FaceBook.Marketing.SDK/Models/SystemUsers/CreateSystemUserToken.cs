@@ -4,16 +4,16 @@ using System.Text;
 
 namespace FaceBook.Marketing.SDK.Models.SystemUsers
 {
-    public class GetSystemUserTokenRequest : BaseRequest<GetSystemUserTokenParameter, GetSystemUserTokenResponse, GetSystemUserTokenResponse>
+    public class CreateSystemUserTokenRequest : BaseRequest<CreateSystemUserTokenParameter, CreateSystemUserTokenResponse, CreateSystemUserTokenResponse>
     {
-        public GetSystemUserTokenRequest(string AppScopedSystemUserId, string userToken, GetSystemUserTokenParameter parameter) :base(userToken, parameter)
+        public CreateSystemUserTokenRequest(string AppScopedSystemUserId, string userToken, CreateSystemUserTokenParameter parameter) :base(userToken, parameter)
         {
             AppScopedSystemUserId = AppScopedSystemUserId;
         }
         public string AppScopedSystemUserId { get; set; }
-        public override string Url => throw new NotImplementedException();
+        public override string Url => this.AppScopedSystemUserId+"/access_tokens";
     }
-    public class GetSystemUserTokenParameter
+    public class CreateSystemUserTokenParameter
     {
         public string business_app { get; set; }
         public string appsecret_proof { get; set; }
@@ -21,7 +21,7 @@ namespace FaceBook.Marketing.SDK.Models.SystemUsers
         public string access_token { get; set; }
     }
 
-    public class GetSystemUserTokenResponse
+    public class CreateSystemUserTokenResponse
     {
         public string access_token { get; set; }
     }
