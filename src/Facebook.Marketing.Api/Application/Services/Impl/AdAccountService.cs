@@ -32,6 +32,9 @@ namespace Facebook.Marketing.Api.Application.Services.Impl
             return await _client.GetAsync(request);
         }
 
+
+
+
         public async Task<FacebookResult<PageResponse<List<AdAccountInsightResponse>>>> GetAdAccountInsightById(string accountId)
         {
 
@@ -42,5 +45,22 @@ namespace Facebook.Marketing.Api.Application.Services.Impl
             return await _client.GetAsync(request);
         }
 
+        public async Task<FacebookResult<PageResponse<List<OwnedAdAccountResponse>>>> GetOwnedAdAccount(string businessId)
+        {
+            var userToken = _settings.Facebook.Token;
+
+            var request = new OwnedAdAccountRequest(businessId, userToken);
+
+            return await _client.GetAsync(request);
+        }
+
+        public async Task<FacebookResult<PageResponse<List<ClientAdAccountResponse>>>> GetClientAdAccount(string businessId)
+        {
+            var userToken = _settings.Facebook.Token;
+
+            var request = new ClientAdAccountRequest(businessId, userToken);
+
+            return await _client.GetAsync(request);
+        }
     }
 }

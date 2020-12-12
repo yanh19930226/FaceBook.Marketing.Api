@@ -17,6 +17,8 @@ namespace Facebook.Marketing.Api
             public string ClientSecret { get; set; }
             public string RedirectUri { get; set; }
 
+            public string SystemUserToken { get; set; }
+
             public string Token { get; set; }
         }
     }

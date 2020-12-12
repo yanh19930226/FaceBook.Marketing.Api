@@ -180,6 +180,7 @@ D:\Work\ERP\FaceBook.Marketing.Api\tests\FaceBookSDKTests\bin\Debug\netcoreapp3.
 D:\Work\ERP\FaceBook.Marketing.Api\tests\FaceBookSDKTests\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 D:\Work\ERP\FaceBook.Marketing.Api\tests\FaceBookSDKTests\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 D:\Work\ERP\FaceBook.Marketing.Api\tests\FaceBookSDKTests\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\Work\ERP\FaceBook.Marketing.Api\tests\FaceBookSDKTests\obj\Debug\netcoreapp3.1\FaceBookSDKTests.csprojAssemblyReference.cache
 D:\Work\ERP\FaceBook.Marketing.Api\tests\FaceBookSDKTests\obj\Debug\netcoreapp3.1\FaceBookSDKTests.AssemblyInfoInputs.cache
 D:\Work\ERP\FaceBook.Marketing.Api\tests\FaceBookSDKTests\obj\Debug\netcoreapp3.1\FaceBookSDKTests.AssemblyInfo.cs
 D:\Work\ERP\FaceBook.Marketing.Api\tests\FaceBookSDKTests\obj\Debug\netcoreapp3.1\FaceBookSDKTests.csproj.CoreCompileInputs.cache

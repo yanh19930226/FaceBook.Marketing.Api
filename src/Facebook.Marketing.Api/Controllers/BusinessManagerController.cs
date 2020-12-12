@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Facebook.Marketing.Api.Controllers
 {
+
     /// <summary>
     /// 商务平台管理
     /// </summary>
@@ -32,6 +33,11 @@ namespace Facebook.Marketing.Api.Controllers
         [HttpGet]
         public async Task<FacebookResult<PageResponse<List<BusinessManagerPageResponse>>>> GetBusinessManagerPageList()
         {
+            //怎么获取登入用户的商户管理平台Id
+
+            //获取登入用户的商户管理平台列表
+            //获取登入用户的商户管理平台的系统管理员用户
+            //使用登入用户的商户管理平台的系统用户调用接口
 
             var res = await _service.GetBusinessManagerList();
 

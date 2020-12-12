@@ -4,6 +4,20 @@
         <name>Facebook.Marketing.Api</name>
     </assembly>
     <members>
+        <member name="M:Facebook.Marketing.Api.Application.Services.IAdAccountService.GetOwnedAdAccount(System.String)">
+             <summary>
+            获取自己广告账户
+             </summary>
+             <param name="businessId"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Facebook.Marketing.Api.Application.Services.IAdAccountService.GetClientAdAccount(System.String)">
+             <summary>
+            获取客户广告账户
+             </summary>
+             <param name="businessId"></param>
+             <returns></returns>
+        </member>
         <member name="M:Facebook.Marketing.Api.Application.Services.IAdAccountService.GetAdAccountById(System.String)">
             <summary>
             根据Id获取广告账户
@@ -48,6 +62,20 @@
             根据Id获取广告账户
             </summary>
             <param name="adAccountId">广告账户Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:Facebook.Marketing.Api.Controllers.AdAccountsController.GetOwnedAdAccount(System.String)">
+            <summary>
+            获取自己广告账户
+            </summary>
+            <param name="businessId">商务管理平台Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:Facebook.Marketing.Api.Controllers.AdAccountsController.GetClientAdAccount(System.String)">
+            <summary>
+            获取自己广告账户
+            </summary>
+            <param name="businessId">商务管理平台Id</param>
             <returns></returns>
         </member>
         <member name="M:Facebook.Marketing.Api.Controllers.AdAccountsController.GetAdAccountInsightById(System.String)">
@@ -224,7 +252,7 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Facebook.Marketing.Api.Controllers.SystemUserController.SystemUserInstallApp">
+        <member name="M:Facebook.Marketing.Api.Controllers.SystemUserController.SystemUserInstallApp(System.String,System.String)">
             <summary>
             系统用户安装应用
             </summary>
@@ -258,6 +286,14 @@
             <summary>
             获取系统用户的管理的广告账户
             </summary>
+            <param name="businessScopeUserId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Facebook.Marketing.Api.Controllers.SystemUserController.GetAssignedPages(System.String)">
+            <summary>
+            获取系统用户的管理的主页
+            </summary>
+            <param name="businessScopeUserId"></param>
             <returns></returns>
         </member>
     </members>
