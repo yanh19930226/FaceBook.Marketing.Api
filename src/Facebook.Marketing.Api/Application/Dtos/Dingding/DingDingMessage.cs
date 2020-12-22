@@ -9,9 +9,9 @@ namespace Facebook.Marketing.Api.Application.Dtos.Dingding
     {
         public DingDingMessage()
         {
-            this.at = new At();
-            this.text = new Text();
-            this.markdown = new MarkDown();
+            //this.at = new At();
+            //this.text = new Text();
+            //this.markdown = new MarkDown();
         }
         public string msgtype { set; get; }//消息类型
         public Text text { set; get; }//text类型
