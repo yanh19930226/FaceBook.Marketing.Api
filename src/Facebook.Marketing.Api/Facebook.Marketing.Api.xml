@@ -4,20 +4,6 @@
         <name>Facebook.Marketing.Api</name>
     </assembly>
     <members>
-        <member name="M:Facebook.Marketing.Api.Application.Services.IAdAccountService.GetOwnedAdAccount(System.String)">
-             <summary>
-            获取自己广告账户
-             </summary>
-             <param name="businessId"></param>
-             <returns></returns>
-        </member>
-        <member name="M:Facebook.Marketing.Api.Application.Services.IAdAccountService.GetClientAdAccount(System.String)">
-             <summary>
-            获取客户广告账户
-             </summary>
-             <param name="businessId"></param>
-             <returns></returns>
-        </member>
         <member name="M:Facebook.Marketing.Api.Application.Services.IAdAccountService.GetAdAccountById(System.String)">
             <summary>
             根据Id获取广告账户
@@ -62,20 +48,6 @@
             根据Id获取广告账户
             </summary>
             <param name="adAccountId">广告账户Id</param>
-            <returns></returns>
-        </member>
-        <member name="M:Facebook.Marketing.Api.Controllers.AdAccountsController.GetOwnedAdAccount(System.String)">
-            <summary>
-            获取自己广告账户
-            </summary>
-            <param name="businessId">商务管理平台Id</param>
-            <returns></returns>
-        </member>
-        <member name="M:Facebook.Marketing.Api.Controllers.AdAccountsController.GetClientAdAccount(System.String)">
-            <summary>
-            获取自己广告账户
-            </summary>
-            <param name="businessId">商务管理平台Id</param>
             <returns></returns>
         </member>
         <member name="M:Facebook.Marketing.Api.Controllers.AdAccountsController.GetAdAccountInsightById(System.String)">

@@ -58,7 +58,7 @@ namespace Facebook.Marketing.Api.Controllers
         }
 
         /// <summary>
-        /// 获取自己广告账户
+        /// 获取授予的广告账户
         /// </summary>
         /// <param name="businessId">商务管理平台Id</param>
         /// <returns></returns>

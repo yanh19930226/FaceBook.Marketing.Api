@@ -38,9 +38,13 @@ namespace Facebook.Marketing.Api.Application.Services.Impl
         public async Task<FacebookResult<PageResponse<List<AdAccountInsightResponse>>>> GetAdAccountInsightById(string accountId)
         {
 
-            var userToken = _settings.Facebook.Token;
+            var userToken = _settings.Facebook.SystemUserToken;
 
-            var request = new AdAccountInsightRequest(accountId, userToken,new AdAccountInsightParameter { level = "campaign", metrics= "ctr"});
+            var request = new AdAccountInsightRequest(accountId, userToken,new AdAccountInsightParameter { level = "account", metrics= "ctr",time_range = new TimeRange()
+            {
+                since = "2020-11-15",
+                until = "2020-12-29"
+            }});
 
             return await _client.GetAsync(request);
         }
@@ -62,5 +66,51 @@ namespace Facebook.Marketing.Api.Application.Services.Impl
 
             return await _client.GetAsync(request);
         }
+
+        public List<UserAdAccountResponse> GetUserAdAccountsLoop(string token, PageParameter page, List<UserAdAccountResponse> result)
+        {
+            try
+            {
+                var userAdAccountsResponse = this.GetUserAddAcounts(token, page).Result.Result;
+
+                var userAdAccounts = userAdAccountsResponse.data;
+                if (userAdAccounts != null)
+                {
+                    foreach (var item in userAdAccounts)
+                    {
+                        result.Add(item);
+                    }
+
+                    //分页获取
+                    if (string.IsNullOrEmpty(userAdAccountsResponse.paging.next) == false)
+                    {
+                        page.after = userAdAccountsResponse.paging.cursors.after;
+                        GetUserAdAccountsLoop(token, page, result);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                //_logger.LogError(ex.Message);
+                throw;
+            }
+            return result;
+        }
+
+        public async Task<FacebookResult<PageResponse<List<UserAdAccountResponse>>>> GetUserAddAcounts(string userToken, PageParameter page)
+        {
+
+            var request = new UserAdAccountRequest(userToken, new UserAdAccountParameter()
+            {
+                after = page.after,
+                before = page.before,
+                limit = page.limit,
+                pretty = page.pretty
+            });
+
+            return await _client.GetAsync(request);
+        }
+
+
     }
 }

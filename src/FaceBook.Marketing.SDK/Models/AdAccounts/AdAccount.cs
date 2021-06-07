@@ -26,5 +26,7 @@ namespace FaceBook.Marketing.SDK.Models.AdAccounts
         public string balance { get; set; }
         public string business_city { get; set; }
         public string business_name { get; set; }
+
+        public string name { get; set; }
     }
 }

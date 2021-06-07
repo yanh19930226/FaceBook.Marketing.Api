@@ -41,10 +41,19 @@ namespace Facebook.Marketing.Api
             services.AddSingleton(new FaceBookClient(client, settings.Facebook.ClientId, settings.Facebook.ClientSecret,settings.Facebook.RedirectUri));
 
             #region  ToDo ÅúÁ¿×¢ÈëServices
-            services.AddScoped<IAdAccountService, AdAccountService>();
-            services.AddScoped<IBusinessManagerService, BusinessManagerService>();
-            services.AddScoped<IBusinessAssetService, BusinessAssetService>();
-            services.AddScoped<ISystemUserService, SystemUserService>();
+            services.Scan(scan => scan
+                    .FromAssemblyOf<Startup>()
+                    .AddClasses()
+                    .AsMatchingInterface()
+                   .WithTransientLifetime()
+             );
+
+            var list = services.Where(x => x.ServiceType.Namespace.Equals("Facebook.Marketing.Api", StringComparison.OrdinalIgnoreCase)).ToList();
+
+            foreach (var item in list)
+            {
+                Console.WriteLine($"{item.Lifetime},{item.ImplementationType},{item.ServiceType}");
+            }
             #endregion
 
             services.AddCoreSwagger()

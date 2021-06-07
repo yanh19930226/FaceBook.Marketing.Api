@@ -171,7 +171,6 @@ E:\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\bin\Debug\netcoreapp3.1\zh-
 E:\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\bin\Debug\netcoreapp3.1\appsettings.Development.json
 D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\bin\Debug\netcoreapp3.1\appsettings.json
-D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\bin\Debug\netcoreapp3.1\Facebook.Marketing.Api.exe
 D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\bin\Debug\netcoreapp3.1\Facebook.Marketing.Api.deps.json
 D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\bin\Debug\netcoreapp3.1\Facebook.Marketing.Api.runtimeconfig.json
@@ -206,7 +205,6 @@ D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\bin\Debug\netcorea
 D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
 D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
 D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
-D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
 D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
 D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
 D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Proxies.dll
@@ -341,3 +339,5 @@ D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\obj\Debug\netcorea
 D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\obj\Debug\netcoreapp3.1\Facebook.Marketing.Api.dll
 D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\obj\Debug\netcoreapp3.1\Facebook.Marketing.Api.pdb
 D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\obj\Debug\netcoreapp3.1\Facebook.Marketing.Api.genruntimeconfig.cache
+D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+D:\Work\ERP\FaceBook.Marketing.Api\src\Facebook.Marketing.Api\obj\Debug\netcoreapp3.1\scopedcss\bundle\Facebook.Marketing.Api.styles.css
