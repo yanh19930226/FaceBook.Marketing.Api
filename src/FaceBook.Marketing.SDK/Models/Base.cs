@@ -48,6 +48,14 @@ namespace FaceBook.Marketing.SDK.Models
         public K data { get; set; }
     }
 
+    public class PageParameter
+    {
+        public int pretty { get; set; } = 0;
+        public int limit { get; set; } = 25;
+        public string before { get; set; } = null;
+        public string after { get; set; } = null;
+    }
+
     public  class Paging
     {
         public Cursors cursors { get; set; }

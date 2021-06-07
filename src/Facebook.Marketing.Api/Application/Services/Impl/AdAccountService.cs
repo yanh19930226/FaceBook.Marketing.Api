@@ -1,6 +1,7 @@
 ﻿using FaceBook.Marketing.SDK;
 using FaceBook.Marketing.SDK.Models;
 using FaceBook.Marketing.SDK.Models.AdAccounts;
+using FaceBook.Marketing.SDK.Models.Users;
 using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
